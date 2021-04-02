@@ -1,0 +1,37 @@
+@use "sass:color";
+
+$apple: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$mono: 'Courier New', Courier, monospace;
+
+$fonts: (
+  apple-font: $apple,
+  mono-font: $mono
+);
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+$colors: (
+    primary: #231f20,
+    secondary: #d0b8ac,
+    tertiary: #f3d8c7,
+    quaternary: #efe5dc,
+    light: #fbfefb
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.2rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}
