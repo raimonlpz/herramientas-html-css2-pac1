@@ -5,6 +5,8 @@
     border-radius: 10px;
     box-shadow: 0 0 8px 2px #888;
     transition: transform .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    background-color: color(primary);
+    color: color(light);
 
     a {
       text-decoration: none;
@@ -38,7 +40,7 @@
     &__header {
       width: max-content;
       font-size: size(xl) + 3rem;
-      font-weight: 300;
+      font-weight: 500;
       color: color(primary);
       text-decoration: underline;
 

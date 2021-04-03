@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "gsap": "^3.6.1"
+    "gsap": "^3.6.1",
+    "normalize": "^0.3.1"
   }
 }
