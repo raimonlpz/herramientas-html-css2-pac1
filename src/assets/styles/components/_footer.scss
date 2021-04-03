@@ -1,9 +1,10 @@
 .portfolio__footer {
   width: 100%;
-  background-color: color(secondary);
+  background-color: color(primary);
   padding: 1rem;
 
   &__content {
+    color: color(light);
     font-size: size(sm);
     font-weight: 200;
     font-family: font(apple-font);

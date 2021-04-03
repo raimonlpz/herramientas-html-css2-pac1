@@ -1,10 +1,36 @@
 
 .portfolio__section3 {
-  background-color: color(tertiary);
+  &__content {
+    &__header {
+      z-index: 10;
+    }
+
+    &__bg {
+      position: absolute;
+      width: 100vw;
+      z-index:0;
+      height: 100vh;
+      opacity: .5;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url('/src/assets/images/blob.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   @include section-header;
 
     &__content__list {
       width: 70%;
+      z-index:10;
       border: .6px solid color(primary);
       box-shadow: 0 0 8px 2px #888;
       border-radius: 10px;

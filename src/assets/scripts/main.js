@@ -89,7 +89,7 @@ let emojiInterval;
 
 
 function populateEmojisForSectionOne() {
-  const sectionOne = document.querySelector('#about');
+  const sectionOne = document.querySelector('.portfolio__wrapper');
   const childEls = [];
   const availableEmojis = [];
   const shapes = ['🍥', '🍣', '🥡', '🍜', '🍙', '🍚', '🥢', '🍶']
@@ -97,13 +97,13 @@ function populateEmojisForSectionOne() {
 
   for (let x=0; x < window.innerWidth  / 2 ; x++) {
     let positionEl = {
-      x: (Math.random() * window.innerWidth),
+      x: (Math.random() * window.innerWidth) - 100,
       y: (Math.random() * window.innerHeight)
     }
 
     if (
-    !(positionEl.x > 30 && positionEl.x < (window.innerWidth - 55)) ||
-     (positionEl.y > window.innerHeight - 55)
+    !(positionEl.x > 60 && positionEl.x < (window.innerWidth - 55)) ||
+     (positionEl.y > window.innerHeight - 95)
     )
     {
       const divEl = document.createElement('div');
@@ -152,7 +152,6 @@ function populateEmojisForSectionOne() {
 }
 
 window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
   (document.querySelectorAll('.emoji')).forEach(e => e.remove());
   clearInterval(emojiInterval);
   if (window.innerWidth > 700) populateEmojisForSectionOne();

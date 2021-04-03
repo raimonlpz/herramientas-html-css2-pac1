@@ -4,6 +4,18 @@
     border: .5px solid black;
     border-radius: 10px;
     box-shadow: 0 0 8px 2px #888;
+    transition: transform .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+
+    &:hover {
+      transform: translate(2%, 2%);
+      cursor: pointer;
+    }
    }
 }
 
@@ -14,6 +26,8 @@
     left: 50%;
     width: 75%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 200;
     transform: translate(-50%, -50%);
 
@@ -24,7 +38,7 @@
     &__header {
       width: max-content;
       font-size: size(xl) + 3rem;
-      font-weight: 200;
+      font-weight: 300;
       color: color(primary);
       text-decoration: underline;
 
