@@ -10,6 +10,15 @@
 
 @import "./base/base";
 
+
+@import "./components/nav-menu";
+@import "./components/emoji-animations";
+@import "./components/section-one";
+@import "./components/section-two";
+@import "./components/section-three";
+@import "./components/section-four";
+@import "./components/footer";
+
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/

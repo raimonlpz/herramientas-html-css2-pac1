@@ -83,7 +83,7 @@ gsap.to('.rice', {
 let emojiInterval;
 
 (function init() {
-  populateEmojisForSectionOne();
+  if (window.innerWidth > 700) populateEmojisForSectionOne();
   gsap.fromTo(".portfolio__nav--underline", {y: 50, ease: 'easeOut'}, {y: 0, duration: 1, delay: .2, ease: 'easeOut' });
 })();
 
@@ -152,9 +152,10 @@ function populateEmojisForSectionOne() {
 }
 
 window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
   (document.querySelectorAll('.emoji')).forEach(e => e.remove());
   clearInterval(emojiInterval);
-  populateEmojisForSectionOne();
+  if (window.innerWidth > 700) populateEmojisForSectionOne();
 })
 
 

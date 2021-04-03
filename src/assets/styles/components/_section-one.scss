@@ -1,0 +1,41 @@
+
+
+.portfolio__section1 {
+  background-color: color(light);
+
+  &__content {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+
+    &__bg {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      opacity: .2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url('/src/assets/images/blob.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__header {
+      font-size: size(xs) + .1rem;
+      text-align: center;
+
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.portfolio__footer {
+  width: 100%;
+  background-color: color(secondary);
+  padding: 1rem;
+
+  &__content {
+    font-size: size(sm);
+    font-weight: 200;
+    font-family: font(apple-font);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+}

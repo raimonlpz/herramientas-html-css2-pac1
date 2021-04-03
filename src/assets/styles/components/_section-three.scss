@@ -1,0 +1,29 @@
+
+.portfolio__section3 {
+  background-color: color(tertiary);
+  @include section-header;
+
+    &__content__list {
+      width: 70%;
+      border: .6px solid color(primary);
+      box-shadow: 0 0 8px 2px #888;
+      border-radius: 10px;
+      padding: 1rem;
+
+      @media (max-width: 1000px) {
+        width: 95%;
+      }
+
+
+      &--unordered {
+        list-style: none;
+        font-size: size(lg);
+
+        @media (max-width: 1000px) {
+          font-size: size(xs);
+        }
+
+        @include styled-list;
+      }
+    }
+}

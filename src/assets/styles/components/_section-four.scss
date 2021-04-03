@@ -1,0 +1,50 @@
+
+.portfolio__section4 {
+  background-color: color(secondary);
+  @include section-header;
+
+    &__content__list {
+      width: 70%;
+
+      &--unordered {
+        list-style: none;
+        font-size: size(lg);
+
+        li {
+          padding: 1rem;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+            transition: color .6s cubic-bezier(0.19, 1, 0.22, 1);
+
+            &:hover {
+              color: color(quaternary);
+            }
+          }
+
+          i {
+            color: color(quaternary);
+          }
+         }
+      }
+    }
+
+    &__content__arrow-up {
+      position: absolute;
+      right: 10px;
+      top: 240px;
+      font-size: size(xl) + 1rem;
+
+      a {
+        text-decoration: none;
+        color: color(quaternary);;
+        transition: all .6s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        &:hover {
+          font-size: size(xl) + 1.5rem;
+          color: color(tertiary);
+        }
+      }
+
+  }
+}

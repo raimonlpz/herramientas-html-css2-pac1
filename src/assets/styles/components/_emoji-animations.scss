@@ -1,0 +1,17 @@
+.emoji {
+  transition: transform 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.animate-emoji-right-top {
+  transform: translate(700px, -200px);
+}
+.animate-emoji-right-bottom {
+  transform: translate(700px, 200px);
+}
+
+.animate-emoji-left-top {
+  transform: translate(-700px, -200px);
+}
+.animate-emoji-left-bottom {
+  transform: translate(-700px, 200px);
+}
