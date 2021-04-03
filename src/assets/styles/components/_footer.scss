@@ -2,6 +2,12 @@
   width: 100%;
   background-color: color(primary);
   padding: 1rem;
+  padding-bottom: 11rem;
+
+
+  @media (max-width: 1000px) {
+    padding-bottom: 1rem;
+  }
 
   &__content {
     color: color(light);

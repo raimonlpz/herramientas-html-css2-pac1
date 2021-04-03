@@ -2,9 +2,12 @@
  * Import dependencies from node_modules
  * see commented examples below
  */
-
 import { ScrollTrigger, gsap , Power1 } from "gsap/all";
+import SmoothScroll from 'smooth-scroll';
+
 gsap.registerPlugin(ScrollTrigger);
+var scroll = new SmoothScroll('a[href*="#"]');
+
 /**
  * Ramen
  */
@@ -116,6 +119,7 @@ function populateEmojisForSectionOne() {
       availableEmojis.push(`.emoji-${x}`);
 
       divEl.style.opacity = '0.8';
+      divEl.style.position = 'fixed';
       divEl.style.transition = 'all 1.8s .05s cubic-bezier(0.19, 1, 0.22, 1)';
 
       divEl.appendChild(divElCont);
@@ -176,6 +180,9 @@ function animateEmojis(mouseX, mouseY) {
     emojis.forEach(e => e.style.transform += `translateY(${-16 * Math.random()}px)`);
   }
 }
+
+
+
 
 
 
