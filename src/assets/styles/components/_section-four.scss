@@ -27,6 +27,24 @@
 
   @include section-header;
 
+  &__content__arrow-up {
+    z-index:10;
+    position: absolute;
+    right: 10px;
+    top: 240px;
+    font-size: size(xl) + 1rem;
+
+    a {
+      text-decoration: none;
+      color: color(primary);
+      transition: all .6s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      &:hover {
+        font-size: size(xl) + 1.5rem;
+        color: color(tertiary);
+      }
+    }
+  }
+
     &__content__list {
       z-index:10;
       width: 60%;
@@ -58,22 +76,5 @@
       }
     }
 
-    &__content__arrow-up {
-      z-index:10;
-      position: absolute;
-      right: 10px;
-      top: 240px;
-      font-size: size(xl) + 1rem;
 
-      a {
-        text-decoration: none;
-        color: color(primary);;
-        transition: all .6s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-        &:hover {
-          font-size: size(xl) + 1.5rem;
-          color: color(tertiary);
-        }
-      }
-
-  }
 }
